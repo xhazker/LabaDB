@@ -204,5 +204,23 @@ if __name__ == "__main__":
     ui.pushButton_2.clicked.connect(phonebook.deleteRec)
     ui.tableWidget.itemChanged.connect(phonebook.updateData)
 
+    # Проверка эффективности
+    #start_time = time.time()
+    #for i in range(10):
+    #    phonebook.insertDB(i,[i+1,i+2,i+3])
+    #print(time.time() - start_time, "insert")
+
+    #start_time = time.time()
+    #for i in range(10):
+    #    phonebook.deleteFromDB(i,i+1)
+    #print(time.time() - start_time, "delete")
+
+    #for i in range(1000000):
+    #    phonebook.insertDB(i,[0,0,0])
+
+    #start_time = time.time()
+    #phonebook.searchData(0)
+    #print(time.time() - start_time, "search")
+    
     # Run main loop
     sys.exit(app.exec_())
